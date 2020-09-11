@@ -1,0 +1,24 @@
+ALGORITHME ex-9.5
+
+    VARIABLES
+        sentence: chaîne
+        charPos: numérique
+        leftSentence: chaîne
+        rightSentence: charPos
+
+    DEBUT
+        ECRIRE "Veuillez entrer une phrase :"
+        LIRE sentence
+
+        ECRIRE "Indiquez la position d'un caractère de la chaîne, ce dernier sera supprimé : "
+        LIRE charPos
+
+        leftSentence = Mid(sentence, 0, charPos)
+        rightSentence = Mid(sentence, charPos+1, Length(sentence))
+        sentence = leftSentence+rightSentence
+
+        ECRIRE "La nouvelle phrase :"
+        ECRIRE sentence
+    FIN
+
+FIN ex-9.5
