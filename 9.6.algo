@@ -1,0 +1,20 @@
+ALGORITHME ex-9.6
+
+    VARIABLES
+        sentence: chaîne
+
+    DEBUT
+        ECRIRE "Indiquez une phrase :"
+        LIRE sentence
+
+        ECRIRE "Codification de votre phrase"
+
+        POUR i 0 à Length(sentence)
+            sentence = Mid(sentence, 0, i)+Chr(Asc(Mid(sentence, i, i+1)))+Mid(sentence, i+1, Length(sentence))
+        FIN POUR
+
+        ECRIRE "Votre phrase codée :"
+        ECRIRE sentence
+    FIN
+
+FIN ex-9.6

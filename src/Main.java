@@ -9,11 +9,14 @@ public class Main {
         Main m = new Main();
 
         System.out.println("1. 9.5");
+        System.out.println("2. 9.6");
         System.out.print("Choisissez votre option : ");
         option = Integer.parseInt(m.reader.readLine());
 
         if (option == 1) {
             m.algo95();
+        } else if (option == 2) {
+            m.algo96();
         } else {
             System.out.println("Mauvaise option");
         }
@@ -36,6 +39,20 @@ public class Main {
         sentence = leftSentence+rightSentence;
 
         System.out.println("La nouvelle phrase : ");
+        System.out.println(sentence);
+    }
+
+    public void algo96() throws IOException {
+        String sentence = new String();
+
+        System.out.println("Indiquez une phrase :");
+        sentence = reader.readLine();
+
+        for (int i = 0; i < sentence.length(); i++) {
+            sentence = sentence.substring(0, i)+(char)((int)sentence.charAt(i)+1)+sentence.substring(i+1, sentence.length());
+        }
+
+        System.out.println("Votre phrase codée :");
         System.out.println(sentence);
     }
 }
