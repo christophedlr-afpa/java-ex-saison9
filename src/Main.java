@@ -1,6 +1,7 @@
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.util.Random;
 
 public class Main {
     BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
@@ -10,6 +11,7 @@ public class Main {
 
         System.out.println("1. 9.5");
         System.out.println("2. 9.6");
+        System.out.println("3. 9.8");
         System.out.print("Choisissez votre option : ");
         option = Integer.parseInt(m.reader.readLine());
 
@@ -17,6 +19,8 @@ public class Main {
             m.algo95();
         } else if (option == 2) {
             m.algo96();
+        } else if (option == 3) {
+            m.algo98();
         } else {
             System.out.println("Mauvaise option");
         }
@@ -54,5 +58,31 @@ public class Main {
 
         System.out.println("Votre phrase codée :");
         System.out.println(sentence);
+    }
+
+    public void algo98() throws IOException {
+        int glup;
+        int glup2;
+        float glupFloat;
+        Random rand = new Random();
+
+        glup = rand.nextInt((2-0)+1)+0;
+        System.out.println(glup);
+
+        glup = rand.nextInt((1-(-1))+1)+(-1);
+        System.out.println(glup);
+
+        glupFloat = (float) ((-1.35) + (rand.nextFloat() * (1.65 - (-1.35))));
+        System.out.println(glupFloat);
+
+        glup = rand.nextInt((6-1)+1)+1;
+        System.out.println(glup);
+
+        glupFloat = (float) ((-10.5) + (rand.nextFloat() * (6.5 - (-10.5))));
+        System.out.println(glupFloat);
+
+        glup = rand.nextInt((6-1)+1)+1;
+        glup2 = rand.nextInt((6-1)+1)+1;
+        System.out.println(glup+glup2);
     }
 }

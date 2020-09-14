@@ -1,0 +1,74 @@
+ALGORITHME ex9.8-glup1
+
+    VARIABLES
+        glup: numérique
+
+    DEBUT
+        glup = random(0, 2)
+
+        AFFICHER glup
+    FIN
+FIN ex9.8-glup1
+
+ALGORITHME ex9.8-glup2
+
+    VARIABLES
+        glup: numérique
+
+    DEBUT
+        glup = random(-1, 1)
+
+        AFFICHER glup
+    FIN
+FIN ex9.8-glup2
+
+
+ALGORITHME ex9.8-glup3
+
+    VARIABLES
+        glup0: numérique
+
+    DEBUT
+        glup = random(1.35, 1.65)
+
+        AFFICHER glup
+    FIN
+FIN ex9.8-glup3
+
+ALGORITHME ex9.8-glup4
+
+    VARIABLES
+        glup: numérique
+
+    DEBUT
+        glup = random(1, 6)
+
+        AFFICHER glup
+    FIN
+FIN ex9.8-glup4
+
+ALGORITHME ex9.8-glup5
+
+    VARIABLES
+        glup: numérique
+
+    DEBUT
+        glup = random(-10.5, 6.5)
+
+        AFFICHER glup
+    FIN
+FIN ex9.8-glup5
+
+ALGORITHME ex9.8-glup6
+
+    VARIABLES
+        glup1: numérique
+        glup2: numérique
+
+    DEBUT
+        glup1 = random(1, 6)
+        glup2 = random(1, 6)
+
+        AFFICHER glup1+glup2
+    FIN
+FIN ex9.8-glup6
